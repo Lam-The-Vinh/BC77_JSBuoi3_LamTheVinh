@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <!-- bài tập Xét thưởng nhân viên đạt đủ doanh số  -->
+    <div class="container mx-auto">
+      <h1 class="text-xl font-bold text-red-500">
+        bài tập Xét thưởng nhân viên đạt đủ doanh số
+      </h1>
+      <div>
+        <label class="block mb-2 text-sm font-medium text-gray-900"
+          >nhập số sản phẩm bán được</label
+        >
+        <input
+          type="text"
+          id="sanPham"
+          class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs"
+          placeholder="nhập số sản phẩm bán được"
+        />
+        <button id="tinhThuong" class="bg-green-500 p-4 mt-5">Tính</button>
+        <div id="thuong">Thưởng:</div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!-- bài tập Tính chiết khấu  -->
+    <div class="container mx-auto">
+      <h1 class="text-xl font-bold text-red-500">bài tập Tính chiết khấu</h1>
+      <div>
+        <label class="block mb-2 text-sm font-medium text-gray-900"
+          >nhập số tiền mua hàng</label
+        >
+        <input
+          type="text"
+          id="soTien"
+          class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs"
+          placeholder="nhập số tiền mua hàng"
+        />
+        <button id="chietKhau" class="bg-green-500 p-4 mt-5">Tính</button>
+        <div id="giam">giảm còn: <span></span>$</div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <!-- bài tập Kiểm tra mật khẩu mạnh hay yếu -->
+    <div class="container mx-auto">
+      <h1 class="text-xl font-bold text-red-500">
+        Bài tập hiển thị thông tin người dùng
+      </h1>
+      <div>
+        <label class="block mb-2 text-sm font-medium text-gray-900"
+          >Mật khẩu</label
+        >
+        <div class="relative">
+          <input
+            type="password"
+            id="matKhau"
+            class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs"
+            placeholder="nhập mật khẩu"
+          />
+          <i
+            class="fa fa-eye absolute top-2 right-1"
+            onclick="batTatMatKhau()"
+          ></i>
+          <button id="kiemTra" class="bg-green-500 p-4 mt-5">Kiểm tra</button>
+          <div id="ketQua"></div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <script src="./js/main.js"></script>
+  </body>
+</html>
