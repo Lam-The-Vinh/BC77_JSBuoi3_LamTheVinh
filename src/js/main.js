@@ -1,3 +1,13 @@
+// bài tập kiểm chẵn lẽ
+document.querySelector("#chanLe").onclick = function () {
+  let soNguyen = document.querySelector("#soNguyen").value;
+  if (soNguyen % 2 === 0) {
+    document.querySelector("#result span").innerHTML = "chẵn";
+  } else {
+    document.querySelector("#result span").innerHTML = "lẻ";
+  }
+};
+
 // bài tập Xét thưởng nhân viên đạt đủ doanh số
 document.querySelector("#tinhThuong").onclick = function () {
   let sanPham = document.querySelector("#sanPham").value;
